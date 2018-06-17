@@ -3,7 +3,7 @@ const {
   getMinPos,
   getValues,
   mergeSortedArrays,
-} = require('../mergeSortedArrays');
+} = require('./mergeSortedArrays');
 
 describe('below', () => {
   it('handles empty arrays', () => {
