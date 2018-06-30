@@ -1,4 +1,4 @@
-const fizzBuzzTest = num => {
+const fizzBuzz = num => {
   const fizzTest = num % 3 === 0;
   const buzzTest = num % 5 === 0;
   if (fizzTest && buzzTest) return 'FizzBuzz';
@@ -8,5 +8,5 @@ const fizzBuzzTest = num => {
 };
 
 module.exports = {
-  fizzBuzzTest,
+  fizzBuzz,
 };
