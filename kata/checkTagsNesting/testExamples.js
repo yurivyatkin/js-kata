@@ -118,6 +118,40 @@ const testExamples = [
     },
     output: 'Expected </B> found #',
   },
+  {
+    input: 'This string has no tags',
+    tagTokens: [],
+    mismatch: null,
+    output: 'Correctly tagged paragraph',
+  },
+  {
+    input: 'This string has <A>one opening tag',
+    tagTokens: [
+      {
+        tag: 'A',
+        closing: false,
+      },
+    ],
+    mismatch: {
+      expected: 'A',
+      found: '#',
+    },
+    output: 'Expected </A> found #',
+  },
+  {
+    input: 'This string has one</A> closing tag',
+    tagTokens: [
+      {
+        tag: 'A',
+        closing: true,
+      },
+    ],
+    mismatch: {
+      expected: '#',
+      found: 'A',
+    },
+    output: 'Expected # found </A>',
+  },
 ];
 
 module.exports = {
