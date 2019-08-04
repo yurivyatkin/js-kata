@@ -19,6 +19,7 @@ const testExamples = [
         closing: true,
       },
     ],
+    mismatch: null,
     output: 'Correctly tagged paragraph',
   },
   {
@@ -41,6 +42,7 @@ const testExamples = [
         closing: true,
       },
     ],
+    mismatch: null,
     output: 'Correctly tagged paragraph',
   },
   {
@@ -64,6 +66,10 @@ const testExamples = [
         closing: true,
       },
     ],
+    mismatch: {
+      expected: 'C',
+      found: 'B',
+    },
     output: 'Expected </C> found </B>',
   },
   {
@@ -83,6 +89,10 @@ const testExamples = [
         closing: true,
       },
     ],
+    mismatch: {
+      expected: '#',
+      found: 'C',
+    },
     output: 'Expected # found </C>',
   },
   {
@@ -102,6 +112,10 @@ const testExamples = [
         closing: true,
       },
     ],
+    mismatch: {
+      expected: 'B',
+      found: '#',
+    },
     output: 'Expected </B> found #',
   },
 ];
