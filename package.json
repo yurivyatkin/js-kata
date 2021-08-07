@@ -1,6 +1,7 @@
 {
-  "name": "JavaScriptKata",
+  "name": "java-script-kata",
   "version": "1.0.0",
+  "private": true,
   "description": "My training spot for coding exercises",
   "repository": {
     "type": "git",
