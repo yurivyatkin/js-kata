@@ -29,14 +29,14 @@ describe('bitwiseAND', () => {
 
 // Write tests for bitwiseOR
 describe('bitwiseOR', () => {
-  xit('should return 15 for 7 and 12', () => {
+  it('should return 15 for 7 and 12', () => {
     expect(bitwiseOR(7, 12)).toEqual(15);
   });
-  xit('should return 49 for 32 and 17', () => {
+  it('should return 49 for 32 and 17', () => {
     expect(bitwiseOR(32, 17)).toEqual(49);
   });
-  xit('should return 30 for 13 and 19', () => {
-    expect(bitwiseOR(13, 19)).toEqual(30);
+  it('should return 30 for 13 and 19', () => {
+    expect(bitwiseOR(13, 19)).toEqual(31);
   });
 });
 
