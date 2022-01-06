@@ -16,13 +16,13 @@ const { bitwiseAND, bitwiseOR, bitwiseXOR } = require('./bitwiseOperations');
 
 // Write tests for bitwiseAND
 describe('bitwiseAND', () => {
-  xit('should return 4 for 7 and 12', () => {
+  it('should return 4 for 7 and 12', () => {
     expect(bitwiseAND(7, 12)).toEqual(4);
   });
-  xit('should return 0 for 32 and 17', () => {
+  it('should return 0 for 32 and 17', () => {
     expect(bitwiseAND(32, 17)).toEqual(0);
   });
-  xit('should return 1 for 13 and 19', () => {
+  it('should return 1 for 13 and 19', () => {
     expect(bitwiseAND(13, 19)).toEqual(1);
   });
 });
