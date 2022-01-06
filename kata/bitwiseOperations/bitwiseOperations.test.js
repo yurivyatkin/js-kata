@@ -42,13 +42,13 @@ describe('bitwiseOR', () => {
 
 // Write tests for bitwiseXOR
 describe('bitwiseXOR', () => {
-  xit('should return 11 for 7 and 12', () => {
+  it('should return 11 for 7 and 12', () => {
     expect(bitwiseXOR(7, 12)).toEqual(11);
   });
-  xit('should return 49 for 32 and 17', () => {
+  it('should return 49 for 32 and 17', () => {
     expect(bitwiseXOR(32, 17)).toEqual(49);
   });
-  xit('should return 30 for 13 and 19', () => {
+  it('should return 30 for 13 and 19', () => {
     expect(bitwiseXOR(13, 19)).toEqual(30);
   });
 });
