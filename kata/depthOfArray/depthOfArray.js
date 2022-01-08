@@ -4,7 +4,7 @@
  */
 function depth(arr) {
   return arr.reduce(
-    (d, v) => Math.max(d, Array.isArray(v) ? depth(v) + 1 : 1),
+    (d, v) => (Array.isArray(v) ? Math.max(d, depth(v) + 1) : d),
     1
   );
 }
